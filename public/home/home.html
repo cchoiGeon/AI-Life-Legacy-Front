@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFE LEGACY</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="/js/home.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="login-container" id="login-container">
+                <!-- <button class="login-button" onclick="window.location.href='/public/login/login.html'">로그인</button> -->
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="illustrations">
+                <img src="/images/background_left.svg" alt="Background Left" class="background-left">
+                <img src="/images/background_right.svg" alt="Background Right" class="background-right">
+            </div>
+        </div>
+
+            <div class="title-section">
+                <div class="logo-container">
+                    <img class="ic_logo" src="/images/ic_logo.svg" alt="ic_logo">
+                </div>
+                <h1 id="title">LIFE LEGACY</h1>
+                <p class="subtitle">AI와 음성인식 기술을 활용한<br>맞춤형 자서전을 제작해볼까요?</p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="content-frame">
+                <button class="button write-legacy" onclick="window.location.href='/myprofile'">자서전 작성</button>
+                <button class="button view-legacy" id="view-legacy-btn" onclick="window.location.href='/mypage'">자서전 보기</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI를 이용한 자서전</title>
+    <link rel="stylesheet" href="/css/posts.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <!-- <script src="./check.js"></script> -->
+</head>
+<body>
+    <header class="header">
+        <h1><span id="title"></span></h1>
+    </header>
+
+    <div id="content" class="container">
+        <div class="response-section">
+            <div class="response-messages">
+                <!-- 질문 메시지들이 여기에 추가됩니다 -->
+            </div>
+
+            <!-- input -->
+            <div class="input-section">
+                <img src="/images/plus.png" id="plusBtn" class="icon-button">
+                <div class="input-bar">
+                    <input id="response-input" class="response-input" placeholder="답변을 입력하세요.">
+                    <button id="sendBtn" class="icon-button">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="#4a90e2"
+                            class="bi bi-arrow-up-circle-fill"
+                            viewBox="0 0 16 16"
+                        >
+                            <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+                            </svg>
+                    </button>
+                </div>
+                <div id="action-buttons" class="action-buttons" style="display: none;">
+                    <div class="voice-recognition-container">
+                        <button id="recordButton">
+                            <img src="/images/voice.png">
+                        </button>
+                        <div class="message-box">
+                            <div class="dots"></div>
+                            <div class="timer">00:00</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="voice-status" class="voice-status" style="display: none;">음성 입력 중...</div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/posts1.js"></script>
+</body>
+</html>

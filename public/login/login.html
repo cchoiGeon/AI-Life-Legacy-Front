@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 - LIFE LEGACY</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-section">
+            <img src="/images/ic_logo.svg" alt="Logo" class="login-logo">
+            <h1 id="title" class="login-title">LIFE LEGACY</h1>
+        </div>
+        <div class="login-form">
+            <h2 class="form-title">로그인</h2>
+            <form action="/login" method="POST">
+                <div class="form-group">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" name="email" placeholder="이메일을 입력해주세요." required>
+                </div>
+                <div class="form-group">
+                    <label for="password">비밀번호</label>
+                    <input type="password" id="password" name="password" placeholder="비밀번호를 입력해주세요." required>
+                </div>
+                <button type="submit" class="submit-button">로그인</button>
+            </form>
+        </div>
+
+        <!-- 회원가입 버튼 -->
+        <div class="signup-link">
+            <p>아직 회원이 아니신가요? <a href="/signup" id="signupLink">회원가입</a></p>
+        </div>
+    </div>
+
+    <script src="/js/login.js"></script>
+</body>
+</html>

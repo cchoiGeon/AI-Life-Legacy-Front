@@ -1,0 +1,176 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Pretendard Variable", system-ui;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.container {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.login-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 10; /* Ensure it's on top */
+}
+
+.logout-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    z-index: 10; /* Ensure it's on top */
+}
+
+.login-button:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+.logout-button:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.illustrations {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.background-left {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: 70vh; /* 전체 높이의 반 */
+    z-index: -1; /* Place behind content */
+}
+
+.background-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: 70vh; /* 전체 높이의 반 */
+    z-index: -1; /* Place behind content */
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.ic_logo {
+    width: 140px;
+    height: 120px;
+}
+
+#title {
+    font-family: "Caveat", cursive;
+    font-size: 50px;
+    color: #000000;
+}
+
+.subtitle {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #8A8A8A;
+    line-height: 1.5;
+}
+
+.content-frame {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 285px;
+    height: 60px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.write-legacy {
+    background-color: #D9D9D9;
+    color: #000;
+    border: none;
+}
+
+.view-legacy {
+    background-color: #ffffff;
+    color: #000;
+    border: 2px solid #D9D9D9;
+}
